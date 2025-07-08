@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -47,34 +49,39 @@
           <button>Замовити послугу</button>
         </div>
       </section>
-      <div class="container">
-        <div class="item">
-          <h3>Увага до деталей</h3>
-          <p>
-            Ідейні міркування, і навіть початок повсякденної роботи з формування
-            <br />
-            позиції.
-          </p>
+      <section class="items">
+        <div class="container">
+          <ul class="items-list">
+            <li class="item">
+              <h3 class="item-title">Увага до деталей</h3>
+              <p>
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li class="item">
+              <h3>Пунктуальність</h3>
+              <p>
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li class="item">
+              <h3>Планування</h3>
+              <p>
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="item">
+              <h3>Сучасні технології</h3>
+              <p>
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
         </div>
-        <div class="item">
-          <h3>Пунктуальність</h3>
-          <p>
-            Завдання організації, особливо рамки і місце навчання кадрів тягне у
-            себе.
-          </p>
-        </div>
-        <div class="item">
-          <h3>Планування</h3>
-          <p>Так само консультація з широким активом значною мірою зумовлює.</p>
-        </div>
-        <div class="item">
-          <h3>Сучасні технології</h3>
-          <p>
-            Значимість цих проблем настільки очевидна, що реалізація планових
-            завдань.
-          </p>
-        </div>
-      </div>
+      </section>
       <section class="services">
         <h2>Чим ми займаємося</h2>
         <div class="service">
@@ -112,10 +119,11 @@
       </section>
     </main>
     <footer>
-      <div class="container">
+      <div class="container footer">
         <div class="logo">
           <h1>Web<span1>Studio</span1></h1>
-
+        </div>
+        <div class="contact">
           <p>м. Київ, пр-т Лесі Українки, 26</p>
           <p>
             <a href="info@devstudio.com" class="footer-link"

@@ -22,7 +22,6 @@ body {
 
 .container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 20px;
     max-width: 1200px;
@@ -37,7 +36,7 @@ header {
 
 .logo h1 {
     color: var(--primary-color);
-    margin: 0;
+    font-family: "Raleway", sans-serif;
 }
 
 .logo span {
@@ -46,18 +45,17 @@ header {
 
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin-left: 93px;
     display: flex;
-}
-
-nav ul li {
-    margin-right: 20px;
+    gap: 50px;
 }
 
 nav ul li a {
-    text-decoration: none;
     color: var(--secondary-color);
+}
+
+.contact-info {
+    margin-left: 244px;
 }
 
 .contact-info a {
@@ -84,7 +82,7 @@ nav ul li a {
 .hero h1 {
     margin-top: 0;
     font-size: 44px;
-    padding: 10px 20px;
+    font-weight: 900;
 }
 
 .hero button {
@@ -94,17 +92,38 @@ nav ul li a {
     height: 50px;
     border: none;
     border-radius: 4px;
-    padding: 10px 20px;
     cursor: pointer;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    margin-top: 30px;
 }
 
 .hero button:hover {
     background: var(--button-background-hover);
 }
 
+.items-list {
+    display: flex;
+    gap: 30px;
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+
 .item {
     width: 270px;
     height: 98px;
+}
+
+.item h3 {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.item p {
+    font-size: 14px;
+    color: var(--grey);
+    line-height: 1.71;
+    margin-top: 10px;
 }
 
 .services {
@@ -114,6 +133,7 @@ nav ul li a {
 
 .services h2 {
     margin-bottom: 0;
+    font-size: 36px;
 }
 
 .services .service {
@@ -134,6 +154,7 @@ nav ul li a {
 
 .team h2 {
     margin-bottom: 40px;
+    font-size: 36px;
 }
 
 .team .team-member {
@@ -143,6 +164,7 @@ nav ul li a {
     display: inline-block;
     margin: 0 20px;
     text-align: center;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
 }
 
 .team .team-member img {
@@ -150,13 +172,32 @@ nav ul li a {
     height: auto;
 }
 
+.team .team-member h3 {
+    margin-top: 30px;
+}
+
+.team .team-member p {
+    margin-top: 10px;
+    color: var(--grey);
+}
+
 footer {
     background: var(--background-color-dark);
     color: var(--white);
-    padding: 20px 0;
-    justify-content: center;
-    align-items: center;
+    padding: 60px 0;
+}
+.footer {
+    display: flex;
     flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
 }
 
 footer span {
@@ -172,7 +213,6 @@ footer address {
 }
 
 .footer-link {
-    text-decoration: none;
     color: var(--grey);
 }
 nav .active {
