@@ -101,20 +101,52 @@ nav ul li a {
 }
 
 .example-foto {
-    padding-left: 24px;
     border: 1px solid rgba(238, 238, 238, 1);
     width: 370px;
     height: 404px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 4px;
+}
+
+.example-foto img {
+    width: 370px;
+}
+
+.example-foto h3 {
+    margin: 16px 24px 0 24px;
+}
+
+.example-foto p {
+    margin: 0 24px 20px 24px;
+    color: grey;
 }
 
 footer {
     background: #2F303A;
-    color: #fff;
-    padding: 60px 215px;
+    color: white;
+    padding: 60px 0;
+}
+
+.footer {
+    display: flex;
+    background: #2F303A;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
 }
 
 footer span {
-    color: #ffffff;
+    color: white;
 }
 
 .logo span1 {
@@ -126,8 +158,15 @@ footer address {
 }
 
 .footer-link {
-    text-decoration: none;
-    color: gray;
+    color: grey;
+}
+
+nav .active {
+    color: #007BFF;
+}
+
+.contact-info .active {
+    color: #007bff;
 }
 
 .menu .link {
