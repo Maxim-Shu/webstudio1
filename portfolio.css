@@ -21,10 +21,12 @@ header {
     height: 80px;
 }
 
-.logo h1 {
+.logo-img {
     color: rgba(33, 150, 243, 1);
-    margin: 0;
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
+    font-size: 26px;
+    user-select: none;
 }
 
 .logo span {
